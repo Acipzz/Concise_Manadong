@@ -4,6 +4,7 @@ import OurMenu from "./components/OurMenu";
 import Promo from "./components/Promo";
 import Review from "./components/Review";
 import Location from "./components/Location";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Promo />
       <Review />
       <Location />
+      <Footer />
     </div>
   );
 }
