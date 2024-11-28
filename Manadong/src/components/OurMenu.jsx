@@ -82,23 +82,23 @@ function OurMenu() {
     return (
       <div className="flex flex-col w-full px-3 pt-10 pb-5 md:px-20" id="Menu">
         {/* Bagian judul dan daftar menu */}
-        <div className="flex w-full mb-6 ">
-          <h1 className="text-2xl font-bold text-blue-600">
-            <span className="underline decoration-[3px] underline-offset-[6px] decoration-red-500">
+        <div className="flex w-72 mb-6 ">
+          <h1 className="text-2xl font-bold text-blue-800">
+            <span className="underline decoration-[3px] underline-offset-[6px] decoration-red-500 lg:ml-12 ">
               Our
             </span>{' '}
             Menu
           </h1>
         </div>
-        <div className="grid grid-flow-row grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 MenuList">
+        <div className="grid grid-flow-row grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4 MenuList">
           {Items.map((item) => (
             <div key={item.id} className={`Menu${item.id}`}>
               <button
-                className="w-full text-sm font-bold text-black transition-all duration-150 rounded-md outline-none hover:shadow-lg focus:outline-none"
+                className="w-72 mx-12 text-sm font-bold text-black transition-all duration-150 rounded-md outline-none hover:shadow-lg focus:outline-none"
                 type="button"
                 onClick={() => openPopup(item)}
               >
-                <img src={item.image} className="w-full" alt={item.name} />
+                <img src={item.image} className="w-72 " alt={item.name} />
                 <h1 className="mt-2">{item.name}</h1>
               </button>
             </div>

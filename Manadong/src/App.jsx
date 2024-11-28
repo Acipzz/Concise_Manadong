@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import OurMenu from "./components/OurMenu";
+import Promo from "./components/Promo";
+import Review from "./components/Review";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <Navbar />
       <Hero />
       <OurMenu />
+      <Promo />
+      <Review />
     </div>
   );
 }
